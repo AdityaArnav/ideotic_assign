@@ -1,0 +1,90 @@
+.container{
+    max-width:25vw;
+    margin:auto;
+    margin-top:25vh;
+    box-shadow: 0.1875rem 0.4375rem 0.625rem gray;
+    padding: 1.875rem 0;
+}
+
+.container>form>h1{
+    color:rgb(240, 179, 67);
+    margin-top:0;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+    max-width: 70%;
+    margin:auto;
+    margin-bottom: 1.25rem;
+}
+
+.inputContainer> input{
+    height: 1.875rem;
+    outline: none;
+    border:none;
+    border:1px solid grey;
+    border-radius: 0 0.5rem;
+}
+
+.submitBtn{
+    width:70%;
+    background-color: rgb(103, 103, 251);
+    border-style: none;
+    height: 1.875rem;
+    border-radius: 0 0.5rem;
+}
+.changeBtn{
+    border:none;
+    text-decoration: underline;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    padding:0.125rem 0.3125rem;
+    cursor: pointer;
+}
+.changeBtn:hover{
+    background-color: rgb(240, 192, 102);
+}
+
+@media screen and (min-width:100.0625rem) {
+    .inputContainer> input{
+        height: 2.5rem;
+        border-radius: 0 1rem;
+    }
+
+    .submitBtn{
+        height:2.5rem;
+        font-size: 1.375rem;
+    }
+    
+}
+@media  screen and (max-width:100rem) and (min-width:60.5rem) {
+    .container{
+        max-width:35vw;
+    }
+
+    .inputContainer> input{
+        height: 2.25rem;
+        border-radius: 0 0.75rem;
+    }
+
+    .submitBtn{
+        height:2.25rem;
+        font-size: 1.125rem;
+    }
+    
+}
+@media  screen and (max-width:60.4375rem) and (min-width:500px) {
+    .container{
+        max-width:65vw;
+    }
+}
+
+@media  screen and (max-width:31.1875rem) {
+    .container{
+        max-width:85vw;
+    }
+}
